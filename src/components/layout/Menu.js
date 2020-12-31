@@ -18,19 +18,16 @@ export default class menu extends Component {
         this.setState({
             updateMenu:!this.state.updateMenu
         });
-        var updateMenu=this.state.updateMenu;
-        localStorage.setItem("updateMenu",updateMenu)
     }
     componentDidMount(){
-        console.log(localStorage.getItem('updateMenu'));
         this.setState({
-            updateMenu:false
+            updateMenu:localStorage.getItem('updateMenu')
         });
     }
   render() {
-
-   console.log(this.state.updateMenu);
+    localStorage.setItem('updateMenu',this.state.updateMenu)
     return (
+        
       <div className={this.state.updateMenu?"container-left-index2":"container-left-index2-update"}>
      
                 <div className="table-menu">

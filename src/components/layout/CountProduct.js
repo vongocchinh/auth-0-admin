@@ -8,7 +8,7 @@ export default class CountProduct extends Component {
                             <div className="col-main col-main0">
                                 <h4>Khách Hàng Contact</h4>
                                 <hr />
-                                <a className="detail-logo-main" href="ad.html">
+                                <a className="detail-logo-main" href="###">
                                 <i className="far fa-grin-alt" />
                                 <p>15 →</p>
                                 </a>
@@ -18,7 +18,7 @@ export default class CountProduct extends Component {
                             <div className="col-main col-main1">
                                 <h4>Tổng Khách Hàng</h4>
                                 <hr />
-                                <a className="detail-logo-main" href="ad.html">
+                                <a className="detail-logo-main" href="###">
                                 <i className="far fa-user" />
                                 <p>100 →</p>
                                 </a>
@@ -28,7 +28,7 @@ export default class CountProduct extends Component {
                             <div className="col-main col-main2">
                                 <h4>Tổng Sản Phẩm</h4>
                                 <hr />
-                                <a className="detail-logo-main" href="ad.html">
+                                <a className="detail-logo-main" href="###">
                                 <i className="fas fa-chart-pie" />
                                 <p>800 →</p>
                                 </a>
