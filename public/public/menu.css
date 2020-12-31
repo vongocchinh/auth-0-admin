@@ -1,0 +1,20 @@
+/* .container-left-index3 {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+} */
+
+.container-left-index3 .table-menu #myMenu .menu-re {
+    width: 2%;
+    height: 2%;
+    color: white;
+    margin-right: 10px;
+}
+
+.panel {
+    margin-left: -60px;
+}
+
+.menu-text-h4 {
+    margin-top: 10px;
+}

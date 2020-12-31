@@ -1,0 +1,114 @@
+.login-container {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.login-form-1 {
+    padding: 5%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+
+.login-form-1 h3 {
+    text-align: center;
+    color: #333;
+}
+
+.login-form-2 {
+    padding: 5%;
+    background: #0062cc;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+
+.login-form-2 h3 {
+    text-align: center;
+    color: #fff;
+}
+
+.login-container form {
+    padding: 10%;
+}
+
+.btnSubmit {
+    width: 30%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.login-form-1 .btnSubmit {
+    font-weight: 600;
+    color: #fff;
+    background-color: #0062cc;
+}
+
+.login-form-2 .btnSubmit {
+    font-weight: 600;
+    color: #0062cc;
+    background-color: #fff;
+}
+
+.login-form-2 .ForgetPwd {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.login-form-1 .ForgetPwd {
+    color: black;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.login-form-1 {
+    margin-top: 5%;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.btnSubmit {
+    outline: none;
+    border-radius: 10px;
+}
+
+.form-group a {
+    display: block;
+}
+.form-button-login{
+    display: flex;
+    justify-content: space-between;
+}
+.login-form-1 h3 {
+    padding-bottom: 20px;
+}
+
+.container-login {
+    margin-top: 70px;
+    height: 540px;
+}
+@media screen and (max-width:800px){
+    .login-form-1 {
+        margin-top: 5%;
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+    }
+}
+.color-red{
+    color: white;
+    background-color: red;
+}
+
+.input-form-control-login{
+    width: 100%;
+    height: 35px;
+    border-radius: 7px;
+    border:  1px solid  #C7C7C7;
+    padding-left: 10px;
+    outline: none;
+}
+.input-form-control-login::placeholder{
+    font-size: 13px;
+    
+}
