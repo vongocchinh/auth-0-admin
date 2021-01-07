@@ -1508,59 +1508,11 @@ color: white;
 }
 
 /* admin */
-.account-admin-container{
-width: 100%;
-height: 400px;
-display: flex;
-justify-content: space-around;
-}
-.account-admin{
-width: 300px;
-height: 100%;
-background-color: white;
-border-radius: 5px;
-}
-.account-admin-form{
-width: 450px;
-height:100%;
-padding: 10px;
-background-color: white;
-border-radius: 5px;
-}
-.title-account-admin{
-font-size: 12px;
-margin-top: 10px;
 
-}
-.input-account-admin{
-width: 97%;
-height: 30px;
-margin-left: 5px;
-padding-left: 5px;
-border:1px solid #F0F0F0 ;
-border-radius: 3px;
-font-size: 12px;
-color: #0D83DD;
-}
-.layout-admin-from-input{
-width: 97%;
-margin-left: 5px;
-height: 40px;
-display: flex;
-justify-content: space-between;
-margin-top: 10px;
-border-radius: 3px;
-font-size: 12px;
 
-}
-.layout-input-account-admin{
-width: 49%;
-height: 30px;
-padding-left: 5px;
-border:1px solid #F0F0F0 ;
-border-radius: 3px;
-color: #0D83DD;
-}
+
+
+
 .input-button-submit{
 width: 100px;
 height: 35px;
@@ -1572,28 +1524,8 @@ margin-top: 20px;
 margin-left: 5px;
 border-radius: 3px;
 }
-.title-images-admin{
-width: 100%;
-height: 200px;
-display: flex;
-justify-content: center;
-align-items: center;
-}
-.title-images-admin img{
-width: 150px;
-height: 150px;
-border-radius: 50%;
-border: 2px solid  #007BFF;
-}
-.title-name-admin-hello{
-width: 100%;
-height: 100px;
 
-}
-.title-name-admin-hello p{
-font-size: 13px;
-text-align: center;
-}
+
 .title-images-admin-images{
 width: 100%;
 height: 30px;

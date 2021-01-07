@@ -1,51 +1,53 @@
 import React from 'react';
 import { useAuth0 } from "@auth0/auth0-react";
+import { withStyles } from '@material-ui/styles';
+import styles from './styleProfile/styles';
 // import JSONPretty from 'react-json-pretty';
 
-const Profile = () => {
+const Profile = (props) => {
   const { user, isAuthenticated } = useAuth0();
-
+  const {classes}=props;
   return (
-    isAuthenticated && ( 
+    isAuthenticated && (
     <div className="main-right">
              <div className="">
                 <p className="table-text"><i style={{color:"black"}} className="far fa-calendar-alt" /> UserAdmin</p>
                 <div className="hidden-table">
 
-                        <div className="account-admin-container">
-                            <div className="account-admin">
-                                <div className="title-images-admin">
+                        <div className={classes.accountAdminContainer}>
+                            <div className={classes.accountAdmin}>
+                                <div className={classes.titleImagesAdmin}>
                                     <img
+                                    className={classes.titleImagesAdminImg}
                                         src={user.picture?user.picture:"https://st.quantrimang.com/photos/image/2017/04/08/anh-dai-dien-FB-200.jpg"} 
                                         alt="admin"/>
                                 </div>
 
-                                <div className="title-name-admin-hello">
-                                        <p><strong>Xin Chào</strong>:
+                                <div className={classes.titleNameAdminHello}>
+                                        <p className={classes.titleNameAdminHelloP}><strong>Xin Chào</strong>:
                                             <u>{user.name===''?" Admin":user.name}</u>
                                         </p>
-                                        <p>{user.email}</p>
+                                        <p className={classes.titleNameAdminHelloP}>{user.email}</p>
                                 </div>
 
                             </div>
-                            <div className="account-admin-form">
-                            <form >
-                            <p className="title-account-admin">userEmail:</p>
-                                <div className="input-account-admin" >{user.email}</div>
-                            <p className="title-account-admin">FirstName</p>
-                                <div className="layout-admin-from-input">
-                                    <input  name="displayName" defaultValue={user.family_name}   className="layout-input-account-admin"/>
-                                    <input  name="lastName" defaultValue={user.given_name} className="layout-input-account-admin"/>
-                                </div>
+                            <div className={classes.accountAdminForm}>
+                                <form >
+                                    <p className={classes.titleAccountAdmin}>userEmail:</p>
+                                        <div className={classes.inputAccountAdmin} >{user.email}</div>
+                                    <p className={classes.titleAccountAdmin}>FirstName</p>
+                                        <div className={classes.layoutAdminFromInput}>
+                                            <input  name="displayName" defaultValue={user.family_name}   className={classes.layoutInputAccountAdmin}/>
+                                            <input  name="lastName" defaultValue={user.given_name} className={classes.layoutInputAccountAdmin}/>
+                                        </div>
                                 </form>
                             </div>
                         </div>
                 </div>
                 </div>
-                {/* <JSONPretty data={user} /> */}
             </div>
     )
   )
 }
 
-export default Profile;
+export default withStyles(styles) (Profile);
